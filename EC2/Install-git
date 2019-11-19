@@ -1,0 +1,36 @@
+Connect to your instance using putty
+ 
+#Perform a quick update on your instance:
+sudo yum update -y
+ 
+#Install git in your EC2 instance
+sudo yum install git -y
+ 
+#Check git version
+git version
+
+#create a directory named employee
+mkdir mygit
+ 
+#get inside mygit directory
+cd mygit/
+ 
+#initialize git local repository
+git init
+ 
+#observe .git file is created in your local git repository which
+#contains data and metadata of your local git repository
+ls -a
+ls -a .git/
+ 
+#check git status
+git status
+ 
+#getting help from the command line
+git help
+ 
+#list all git commands and sub-commands
+git help -a
+ 
+#getting help for a particular git command
+git help <command> # for example, git help init will provide details of git init command
